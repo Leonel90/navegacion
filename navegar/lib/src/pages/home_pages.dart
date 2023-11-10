@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:navegar/src/pages/sing_in.dart';
+import 'package:navegar/src/pages/sing_up.dart';
 import 'package:navegar/src/widgets/icon-containers.dart';
 
 class HomePages extends StatefulWidget {
@@ -25,7 +27,63 @@ class _HomePagesState extends State<HomePages> {
             padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 200),
             children: <Widget>[
               //Aqui le ubicaremos el url de una imagen.
-              IconContainer(url: "images/lobo.jpg")
+              IconContainer(url: "images/lobo.jpg"),
+              Text(
+                "Bienvenidos a mi curso",
+                style: TextStyle(
+                  fontFamily: "PermanentMarKer",
+                  fontSize: 30.0,
+                ),
+              ),
+              Divider(
+                height: 30.0,
+              ),
+              Text(
+                "Ejercicio N.-003",
+                style: TextStyle(
+                  fontFamily: "PermanentMarKer",
+                  fontSize: 40.0,
+                ),
+              ),
+              SizedBox(
+                width: double.infinity,
+                height: 60.0,
+                child: ElevatedButton(
+                  onPressed: () {
+                    final route =
+                        MaterialPageRoute(builder: (context) => SingUp());
+                    Navigator.push(context, route);
+                  },
+                  child: Text(
+                    "SING UP",
+                    style: TextStyle(
+                        color: Colors.orange,
+                        fontFamily: "FredokaOne",
+                        fontSize: 30.0),
+                  ),
+                ),
+              ),
+              Divider(
+                height: 30.0,
+              ),
+              SizedBox(
+                width: double.infinity,
+                height: 60.0,
+                child: ElevatedButton(
+                  onPressed: () {
+                    final route =
+                        MaterialPageRoute(builder: (context) => SingIn());
+                    Navigator.push(context, route);
+                  },
+                  child: Text(
+                    "SING IN",
+                    style: TextStyle(
+                        color: Colors.orange,
+                        fontFamily: "FredokaOne",
+                        fontSize: 30.0),
+                  ),
+                ),
+              )
             ],
           ),
         ),
