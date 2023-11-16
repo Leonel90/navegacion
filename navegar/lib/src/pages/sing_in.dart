@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class SingIn extends StatefulWidget {
   const SingIn({super.key});
 
@@ -54,6 +55,28 @@ class _SingInState extends State<SingIn> {
               Divider(
                 height: 30.0,
               ),
+              TextField(
+                decoration: InputDecoration(
+                  hintText: 'Ingrese su Nombre',
+                ),
+              ),
+              TextField(
+                decoration: InputDecoration(
+                  hintText: 'Ingrese su Apellido',
+                ),
+              ),
+              TextField(
+                decoration: InputDecoration(
+                  hintText: 'Ingrese su Cédula',
+                ),
+              ),
+              ElevatedButton.icon(
+                icon: Icon(Icons.add),
+                label: Text('Agregar usuario'),
+                onPressed: () {
+                  // Acción a realizar cuando se presiona el botón
+                },
+              )
             ],
           ),
         ),
