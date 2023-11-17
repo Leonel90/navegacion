@@ -39,7 +39,7 @@ class _SingInState extends State<SingIn> {
                 "LOGIN",
                 style: TextStyle(
                   fontFamily: "PermanentMarker",
-                  fontSize: 30.0,
+                  fontSize: 40.0,
                 ),
               ),
               Divider(
@@ -49,7 +49,7 @@ class _SingInState extends State<SingIn> {
                 "Ejercicio N.-003",
                 style: TextStyle(
                   fontFamily: "PermanentMarker",
-                  fontSize: 40.0,
+                  fontSize: 30.0,
                 ),
               ),
               Divider(
@@ -69,6 +69,9 @@ class _SingInState extends State<SingIn> {
                 decoration: InputDecoration(
                   hintText: 'Ingrese su Cédula',
                 ),
+              ),
+              Divider(
+                height: 50.0,
               ),
               ElevatedButton.icon(
                 icon: Icon(Icons.add),

@@ -32,7 +32,7 @@ class _HomePagesState extends State<HomePages> {
                 "Bienvenidos a mi curso",
                 style: TextStyle(
                   fontFamily: "PermanentMarKer",
-                  fontSize: 30.0,
+                  fontSize: 47.0,
                 ),
               ),
               Divider(
@@ -42,7 +42,7 @@ class _HomePagesState extends State<HomePages> {
                 "Ejercicio N.-003",
                 style: TextStyle(
                   fontFamily: "PermanentMarKer",
-                  fontSize: 40.0,
+                  fontSize: 39.0,
                 ),
               ),
               SizedBox(
