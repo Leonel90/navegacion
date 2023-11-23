@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navegar/src/pages/menu_lateral.dart';
 
 class SingIn extends StatefulWidget {
   const SingIn({super.key});
@@ -77,7 +78,9 @@ class _SingInState extends State<SingIn> {
                 icon: Icon(Icons.add),
                 label: Text('Agregar usuario'),
                 onPressed: () {
-                  // Acción a realizar cuando se presiona el botón
+                  final route =
+                      MaterialPageRoute(builder: (context) => MenuLateral());
+                  Navigator.push(context, route);
                 },
               )
             ],
