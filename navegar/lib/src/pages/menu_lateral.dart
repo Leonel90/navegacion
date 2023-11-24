@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navegar/src/pages/home_pages.dart';
 
 class MenuLateral extends StatelessWidget {
   const MenuLateral({super.key});
@@ -43,15 +44,15 @@ class MenuLateral extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.home),
-              title: Text("Primera opci"),
+              title: Text("Home"),
             ),
             ListTile(
-              leading: Icon(Icons.shopping_cart),
-              title: Text("Primera opci"),
+              leading: Icon(Icons.android),
+              title: Text("Acerca de"),
             ),
             ListTile(
-              leading: Icon(Icons.shopping_cart),
-              title: Text("Primera opci"),
+              leading: Icon(Icons.settings),
+              title: Text("Ajustes"),
             ),
             Padding(
               padding: EdgeInsets.all(14.0),
@@ -68,6 +69,24 @@ class MenuLateral extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.shopping_cart),
               title: Text("Primera opci"),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.lock,
+                color: Colors.black,
+              ),
+              title: Text(
+                "Cerrar Sesión",
+                style: TextStyle(color: Colors.red),
+              ),
+              onTap: () {
+                decoration:
+                BoxDecoration(
+                  color: Colors.red,
+                );
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => HomePages()));
+              },
             ),
           ],
         ),

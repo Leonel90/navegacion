@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:navegar/src/pages/sing_in.dart';
 import 'package:navegar/src/pages/sing_up.dart';
@@ -27,7 +29,16 @@ class _HomePagesState extends State<HomePages> {
             padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 200),
             children: <Widget>[
               //Aqui le ubicaremos el url de una imagen.
-              IconContainer(url: "images/lobo.jpg"),
+              SizedBox(
+                width: 250,
+                height: 250,
+                child: ClipPath(
+                  child: Image.asset(
+                    'images/Lobo.jpg',
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
               Text(
                 "Bienvenidos a mi curso",
                 style: TextStyle(
